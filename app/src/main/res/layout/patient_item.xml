@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+
+        <TextView
+            android:id="@+id/text_view_firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:text="First"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+
+        <TextView
+            android:id="@+id/text_view_lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/text_view_firstName"
+            android:maxLines="1"
+            android:text="Last"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+        <TextView
+            android:id="@+id/text_view_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_firstName"
+            android:maxLines="1"
+            android:text="Department: 201"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+        <TextView
+            android:id="@+id/text_view_nurseID"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_firstName"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="117dp"
+            android:layout_toEndOf="@id/text_view_department"
+            android:maxLines="1"
+            android:text="Nurse: 21"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+        <TextView
+            android:id="@+id/text_view_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Room: 201"
+            android:layout_below="@id/text_view_department"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
