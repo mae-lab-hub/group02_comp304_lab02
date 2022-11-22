@@ -23,7 +23,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loadLoginActivity(View view){
-        Intent intent = new Intent(this,LoginActivity.class);
+        //changed temp to open the menu activity instead
+       // Intent intent = new Intent(this,LoginActivity.class);
+
+        Intent intent = new Intent(this,MenuActivity.class);
         startActivity(intent);
     }
 
