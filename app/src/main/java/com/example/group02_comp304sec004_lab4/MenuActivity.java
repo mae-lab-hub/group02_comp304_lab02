@@ -29,5 +29,8 @@ public class MenuActivity extends AppCompatActivity {
     }
     public void addTestButton(View view){
 
+
+        Intent intent = new Intent(this,TestActivity.class);
+        startActivity(intent);
     }
 }

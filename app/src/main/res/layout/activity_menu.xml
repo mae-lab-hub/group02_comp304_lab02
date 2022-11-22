@@ -76,6 +76,7 @@
             android:layout_gravity="center"
             tools:layout_editor_absoluteX="166dp"
             tools:layout_editor_absoluteY="586dp"
+            android:onClick="addTestButton"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
