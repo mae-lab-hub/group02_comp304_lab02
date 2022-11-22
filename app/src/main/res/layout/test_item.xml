@@ -12,7 +12,7 @@
         android:padding="8dp">
 
         <TextView
-            android:id="@+id/text_view_id"
+            android:id="@+id/text_view_testID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -21,51 +21,51 @@
 
 
         <TextView
-            android:id="@+id/text_view_firstName"
+            android:id="@+id/text_view_patientID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="1"
             android:paddingRight="10dp"
-            android:text="First"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            android:text="patient id"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-
-        <TextView
-            android:id="@+id/text_view_lastName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/text_view_firstName"
-            android:maxLines="1"
-            android:text="Last"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-
-        <TextView
-            android:id="@+id/text_view_department"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_view_firstName"
-            android:maxLines="1"
-            android:text="Department: 201"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
         <TextView
             android:id="@+id/text_view_nurseID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/text_view_patientID"
+            android:maxLines="1"
+            android:text="nurse id"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/text_view_BPL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_nurseID"
+            android:maxLines="1"
+            android:text="BPL"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/text_view_BPH"
             android:layout_width="97dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_view_firstName"
+            android:layout_below="@id/text_view_nurseID"
             android:layout_alignParentRight="true"
             android:layout_marginStart="117dp"
-            android:layout_toEndOf="@id/text_view_department"
+            android:layout_toEndOf="@id/text_view_BPL"
             android:maxLines="1"
-            android:text="Nurse: 21"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            android:text="BPH"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         <TextView
-            android:id="@+id/text_view_room"
+            android:id="@+id/text_view_temperature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="1"
-            android:text="Room: 201"
-            android:layout_below="@id/text_view_department"
+            android:text="Temp"
+            android:layout_below="@id/text_view_BPH"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
 

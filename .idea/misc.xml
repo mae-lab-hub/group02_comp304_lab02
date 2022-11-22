@@ -9,8 +9,11 @@
         <entry key="..\:/COMP304/Group02_lab04/Group02_COMP304Sec004_Lab4/app/src/main/res/layout/activity_patient.xml" value="0.25" />
         <entry key="..\:/COMP304/Group02_lab04/Group02_COMP304Sec004_Lab4/app/src/main/res/layout/activity_registration.xml" value="0.33" />
         <entry key="..\:/COMP304/Group02_lab04/Group02_COMP304Sec004_Lab4/app/src/main/res/layout/activity_test.xml" value="0.23229166666666667" />
+        <entry key="..\:/COMP304/Group02_lab04/Group02_COMP304Sec004_Lab4/app/src/main/res/layout/activity_test_list.xml" value="0.18888888888888888" />
+        <entry key="..\:/COMP304/Group02_lab04/Group02_COMP304Sec004_Lab4/app/src/main/res/layout/activity_test_list2.xml" value="0.23229166666666667" />
         <entry key="..\:/COMP304/Group02_lab04/Group02_COMP304Sec004_Lab4/app/src/main/res/layout/activity_update_info.xml" value="0.17677368212445502" />
         <entry key="..\:/COMP304/Group02_lab04/Group02_COMP304Sec004_Lab4/app/src/main/res/layout/patient_item.xml" value="0.33" />
+        <entry key="..\:/COMP304/Group02_lab04/Group02_COMP304Sec004_Lab4/app/src/main/res/layout/test_item.xml" value="0.6153846153846154" />
       </map>
     </option>
   </component>
