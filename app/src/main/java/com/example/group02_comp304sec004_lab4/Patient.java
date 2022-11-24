@@ -11,25 +11,45 @@ public class Patient {
 
     @NonNull
     private String firstName;
-
     @NonNull
     private String lastName;
-
     @NonNull
     private String department;
-
     @NonNull
     private int nurseID;
-
     @NonNull
     private String room;
 
-    public Patient(@NonNull String firstName, @NonNull String lastName, @NonNull String department, @NonNull int nurseID, @NonNull String room) {
+    public void setNurseID(int nurseID) {
+        this.nurseID = nurseID;
+    }
+
+    public void setRoom(String room) {
+        this.room = room;
+    }
+
+    public Patient(@NonNull String firstName,@NonNull String lastName,@NonNull String department,@NonNull int nurseID,@NonNull String room) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.department = department;
         this.nurseID = nurseID;
         this.room = room;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public Patient() {
+
     }
 
     public void setPatientID(int patientID) {this.patientID = patientID;}
@@ -38,17 +58,17 @@ public class Patient {
         return patientID;
     }
 
-    @NonNull
+
     public String getFirstName() {
         return firstName;
     }
 
-    @NonNull
+
     public String getLastName() {
         return lastName;
     }
 
-    @NonNull
+
     public String getDepartment() {
         return department;
     }
@@ -57,9 +77,21 @@ public class Patient {
         return nurseID;
     }
 
-    @NonNull
+
     public String getRoom() {
         return room;
+    }
+
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "patientID=" + patientID +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", department='" + department + '\'' +
+                ", nurseID=" + nurseID +
+                ", room='" + room + '\'' +
+                '}';
     }
 }
 

@@ -2,6 +2,7 @@ package com.example.group02_comp304sec004_lab4;
 
 import android.app.Application;
 
+import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
@@ -11,8 +12,8 @@ public class PatientViewModel extends AndroidViewModel {
     private PatientRepository patientRepository;
     private LiveData<List<Patient>> allPatients;
 
-    public PatientViewModel(Application application) {
-        super((application));
+    public PatientViewModel(@NonNull Application application) {
+        super(application);
         patientRepository = new PatientRepository(application);
         allPatients = patientRepository.getAllPatients();
     }

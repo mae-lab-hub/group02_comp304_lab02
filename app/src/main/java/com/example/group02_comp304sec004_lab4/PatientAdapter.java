@@ -3,10 +3,13 @@ package com.example.group02_comp304sec004_lab4;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +37,22 @@ public class PatientAdapter  extends RecyclerView.Adapter<PatientAdapter.PaientH
         holder.textViewDepartment.setText(currentPatient.getDepartment());
         holder.textViewNurseID.setText(String.valueOf(currentPatient.getNurseID()));
         holder.textViewRoom.setText(currentPatient.getRoom());
+
+        // Delete the selected patient from the patients list and room database
+        holder.btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PatientDatabase db = Room.databaseBuilder(holder.textViewId.getContext(),
+                        PatientDatabase.class, "patient_database").allowMainThreadQueries().build();
+                PatientDao patientDao = db.patientDao();
+                // delete patient from the database
+                patientDao.deleteByID(currentPatient.getPatientID());
+                // delete patient from the list
+                patients.remove(currentPatient);
+
+                notifyDataSetChanged();
+            }
+        });
     }
 
     @Override
@@ -54,6 +73,7 @@ public class PatientAdapter  extends RecyclerView.Adapter<PatientAdapter.PaientH
         private TextView textViewDepartment;
         private TextView textViewNurseID;
         private TextView textViewRoom;
+        private Button btnDelete;
 
         public PaientHolder(@NonNull View itemView) {
             super(itemView);
@@ -63,7 +83,7 @@ public class PatientAdapter  extends RecyclerView.Adapter<PatientAdapter.PaientH
             textViewDepartment = itemView.findViewById(R.id.text_view_department);
             textViewNurseID = itemView.findViewById(R.id.text_view_nurseID);
             textViewRoom = itemView.findViewById(R.id.text_view_room);
-
+            btnDelete = itemView.findViewById(R.id.btnDelete);
         }
     }
 }

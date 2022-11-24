@@ -24,10 +24,13 @@ public interface PatientDao {
     @Query("DELETE FROM patient_table")
     void deleteAll();
 
+    @Query("DELETE FROM patient_table where patientID = :patientID")
+    void deleteByID(int patientID);
+
     @Query("Select * FROM patient_table where patientID = :patientID")
     LiveData<Patient> getByPatientID(int patientID);
 
-    @Query("Select * FROM patient_table")
+    @Query("Select * FROM patient_table order by patientID")
     LiveData<List<Patient>> getAllPatients();
 
 }
