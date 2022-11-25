@@ -22,6 +22,9 @@ public interface TestDao {
     @Delete
     void delete(Test test);
 
+    @Query("DELETE FROM test_table where testID = :testID")
+    void deleteByID(int testID);
+
     @Query("DELETE FROM test_table")
     void deleteAll();
 

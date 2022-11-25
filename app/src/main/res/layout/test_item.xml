@@ -68,6 +68,15 @@
             android:layout_below="@id/text_view_BPH"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_temperature"
+            android:layout_centerHorizontal="true"
+            android:text="Delete">
+        </Button>
+
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

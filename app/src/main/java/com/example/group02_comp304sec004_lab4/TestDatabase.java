@@ -44,12 +44,12 @@ public abstract class TestDatabase extends RoomDatabase {
 
             // If you want to keep data through app restarts,
             // comment out the following block
-            databaseWriteExecutor.execute(() -> {
+/*            databaseWriteExecutor.execute(() -> {
                 // Populate the database in the background.
                 // If you want to start with more tests, just add them.
                 TestDao dao = INSTANCE.testDao();
                 dao.deleteAll();
-            });
+            });*/
         }
     };
 
